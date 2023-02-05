@@ -13,10 +13,12 @@ export const Item = styled.li`
 export const FieldName = styled.p`
   margin: 8px 0 8px;
   text-transform: capitalize;
+  font-weight: 600;
 `;
 
 export const FieldNum = styled.p`
   margin: 8px 0 8px;
+  font-weight: 600;
 `;
 
 export const DeleteBtn = styled.button`
