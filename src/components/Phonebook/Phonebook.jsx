@@ -56,26 +56,4 @@ class Phonebook extends Component {
   }
 }
 
-// const Phonebook = ({ contacts, name, onChangeInput, addContact }) => (
-//   <>
-//     <h2>Phonebook</h2>
-//     <form onSubmit={addContact}>
-//       <label>
-//         Name
-//         <input
-//           type="text"
-//           name={name}
-//           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-//           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-//           required
-//           onChange={onChangeInput}
-//         />
-//       </label>
-//       <button type="submit">Add contact</button>
-//     </form>
-//     <h2>Contacts</h2>
-//     <ul></ul>
-//   </>
-// );
-
 export default Phonebook;
