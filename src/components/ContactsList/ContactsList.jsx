@@ -10,18 +10,15 @@ import {
 
 const ContactsList = ({ contacts, onDeleteContact }) => (
   <List>
-    {contacts.map(
-      ({ id, name, number }) =>
-        id && (
-          <Item key={id}>
-            <FieldName>{name}:</FieldName>
-            <FieldNum>{number}</FieldNum>
-            <DeleteBtn type="button" onClick={() => onDeleteContact(id)}>
-              Delete
-            </DeleteBtn>
-          </Item>
-        )
-    )}
+    {contacts.map(({ id, name, number }) => (
+      <Item key={id}>
+        <FieldName>{name}:</FieldName>
+        <FieldNum>{number}</FieldNum>
+        <DeleteBtn type="button" onClick={() => onDeleteContact(id)}>
+          Delete
+        </DeleteBtn>
+      </Item>
+    ))}
   </List>
 );
 

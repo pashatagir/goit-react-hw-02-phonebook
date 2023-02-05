@@ -17,12 +17,10 @@ class App extends Component {
     filter: '',
   };
 
-  id = nanoid();
-
   addContact = (name, number) => {
     const { contacts } = this.state;
     const contact = {
-      id: this.id,
+      id: nanoid(),
       name,
       number,
     };
